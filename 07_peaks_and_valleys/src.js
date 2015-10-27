@@ -10,6 +10,42 @@
 
 module.exports = {
   peak: function() {
-    // your code here
+    return '/\\';
+  },
+
+  valley: function() {
+    return '___';
+  },
+
+  peaks: function(a){
+    var str = '';
+    while (a) {
+      str += '/\\';
+      a--;
+    }
+    return str;
+  },
+
+  valleys: function(a){
+    var str = '';
+    while (a) {
+      str += '___';
+      a--;
+    }
+    return str;
+  },
+
+  peaksAndValleys: function(a, b){
+    var str = '';
+    var strb = '';
+    while (a) {
+      str += '/\\';
+      a--;
+    }
+    while (b) {
+      strb += '___';
+      b--;
+    }
+    return str + strb;
   }
-}
+};

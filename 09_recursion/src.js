@@ -1,4 +1,3 @@
-module.exports = {
   /*
     Recall that a recursive function is a function that calls itself (Eloquent JS).
     More formally, a recursive algorithm is an algorithm for which the solution to
@@ -31,10 +30,15 @@ module.exports = {
     that takes an Integer argument (you do not need to check the argument) and
     recursively computes the factorial.
   */
+module.exports = {
 
-  factorial: function(n) {
-
-    
-
-  }
+factorial: function(number) {
+    if(number === 0) {
+        return 1;
+    } else {
+        return number * factorial(number - 1);
+    }
+  return factorial(number);
 }
+
+};

@@ -1,4 +1,4 @@
-var words = require('./word-count');
+var yourCode = require('../src');
 
 describe('factorial', function() {
 
@@ -26,19 +26,19 @@ describe('factorial', function() {
     expect(yourCode.factorial(5)).toEqual(120);
   });
 
-  xit('correctly computes 10! = 3628800', function() {
+  it('correctly computes 10! = 3628800', function() {
     expect(yourCode.factorial(10)).toEqual(3628800);
   });
 
-  xit('correctly computes 15! = 1307674368000', function() {
+  it('correctly computes 15! = 1307674368000', function() {
     expect(yourCode.factorial(15)).toEqual(1307674368000);
   });
 
-  xit('correctly computes 20! = 2432902008176640000', function() {
+  it('correctly computes 20! = 2432902008176640000', function() {
     expect(yourCode.factorial(20)).toEqual(2432902008176640000);
   });
 
-  xit('correctly computes 50! = 3.0414093201713376e+64', function() {
+  it('correctly computes 50! = 3.0414093201713376e+64', function() {
     expect(yourCode.factorial(50)).toEqual(3.0414093201713376e+64);
   });
 });

@@ -30,15 +30,15 @@
     that takes an Integer argument (you do not need to check the argument) and
     recursively computes the factorial.
   */
-module.exports = {
-
-factorial: function(number) {
-    if(number === 0) {
-        return 1;
-    } else {
-        return number * factorial(number - 1);
-    }
+function factorial (number) {
+  if(number === 0) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
+  }
   return factorial(number);
 }
 
+module.exports = {
+  factorial: factorial
 };
